@@ -1,0 +1,16 @@
+{
+  "name": "smart-route-finder",
+  "version": "1.0.0",
+  "description": "A full-stack application with Node.js backend and React frontend",
+  "scripts": {
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-all": "npm run install-backend && npm run install-frontend && npm install",
+    "start-backend": "cd backend && npm run dev",
+    "start-frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run start-backend\" \"npm run start-frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
